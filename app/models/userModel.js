@@ -17,7 +17,7 @@ module.exports = (sequelize) => {
             attributes: { exclude: ['createdAt', 'updatedAt'] }
         },
         tableName: 'usuario',
-        timestamps: 'false'
+        timestamps: false
     };
     return sequelize.define('users', attributes, options);
 };
